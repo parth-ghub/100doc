@@ -11,15 +11,15 @@ int main(){
 
     int matrix[n1][n2];
     
-    for(int i = 1; i <=n1; i++){
-        for(int j = 1; j <=n2; j++){
-            printf("Enter (%d,%d) element: ", i,j);
+    for(int i = 0; i <n1; i++){
+        for(int j = 0; j <n2; j++){
+            printf("Enter (%d,%d) element: ", i+1,j+1);
             scanf("%d",&matrix[i][j]);
         }
     }
 
-    for(int i = 1; i<=n1; i++){
-        for(int j = 1; j<=n2; j++){
+    for(int i = 0; i<n1; i++){
+        for(int j = 0; j<n2; j++){
             printf("%d ", matrix[i][j]);
         }
         printf("\n");
